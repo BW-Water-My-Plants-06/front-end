@@ -9,6 +9,7 @@ import {
 } from "./common";
 import { AccountContext } from "./accountContext";
 import axios from 'axios';
+import axiosWithAuth from '../utils/axiosWithAuth';
 
 export function SignupForm(props) {
   const { switchToSignin } = useContext(AccountContext);
@@ -31,10 +32,11 @@ export function SignupForm(props) {
   }
 
   const signUp = e => {
-    // axios.post('/users/register', signUpInfo)
+    // axiosWithAuth()
+    //   .post('/auth/register', signUpInfo)
     //   .then( res => {
     //     localStorage.setItem("token", res.data.token);
-    //     props.history.push('/classes')
+    //     props.history.push('/home')
     //   })
     //   .catch(err=> {
     //     console.log(err);
