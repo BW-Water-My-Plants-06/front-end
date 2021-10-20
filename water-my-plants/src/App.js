@@ -1,10 +1,12 @@
+import React from 'react';
 import './App.css';
-import './components/listofPlants';
+import PlantList from './components/PlantList';
+import PlantDetail from './components/PlantDetail';
 
 function App() {
   return (
     <div className="App">
-    
+      <PlantList />
     </div>
   );
 }

@@ -1,3 +1,6 @@
+import React from 'react';
+import PlantDetail from './components/PlantDetail';
+
 const myPlants = [{
     id: 1,
     nickname: 'weed',
@@ -21,6 +24,8 @@ const myPlants = [{
     image: 'image url'
 }];
 
-function ListPlants() {
+function PlantList() {
     return <h2>List of Plants</h2>;
   }
+
+  export default PlantList;
