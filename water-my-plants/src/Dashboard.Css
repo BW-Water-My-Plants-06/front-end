@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dashboard h1 {
+  color: white;
+}
+
+.main-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plant-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 10px solid #57b846;
+  border-radius: 5px;
+  width: 20vw;
+  min-width: 240px;
+  height: auto;
+  margin: 40px;
+  background: #fff;
+}
+
+.plant-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.form-button {
+  color: white;
+  font-weight: bold;
+  background: #57b846;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 1vw;
+  width: 10vw;
+  min-width: 96px;
+}
+
+.plant-form {
+  width: 30vw;
+  min-width: 240px;
+  height: auto;
+  background-color: white;
+  border-radius: 5px;
+  border: 10px solid #57b846;
+  margin-bottom: 2vw;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.plant-form input {
+  margin: 1vw;
+  border: 1px solid #57b846;
+}
+
+.plant-form button {
+  background: #57b846;
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 3rem;
+}
+
+form input {
+  font-family: "Ubuntu";
+  font-weight: bold;
+  font-size: 15px;
+  color: #57b846;
+  line-height: 1.2;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 55px;
+  background: #ebebeb;
+  border-radius: 27px;
+  padding: 0 27px 0 27px;
+}
+
+.add {
+  font-family: "Ubuntu";
+  font-weight: bold;
+  font-size: 15px;
+  color: #1b3815;
+  line-height: 1.2;
+  margin: 1vw;
+  position: relative;
+  display: block;
+  width: 30%;
+  min-width: 96px;
+  height: 55px;
+  background: #ebebeb;
+  border-radius: 27px;
+  padding: 0 27px 0 27px;
+}
+
+.add:hover {
+  background-color: white;
+  color: #57b846;
+  border: 5px solid #57b846;
+}
+
+/* PlantCard Styles */
+
+.card-header img {
+  width: 50%;
+  height: auto;
+}
+
+.plant-button {
+  color: white;
+  font-weight: bold;
+
+  background: #57b846;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 1vw;
+  width: 10vw;
+  min-width: 96px;
+}
+
+.plant-card p {
+  color: #469438;
+  text-transform: capitalize;
+  font-size: 1.25rem;
+}
+
+.plant-card h2 {
+  color: #469438;
+  text-transform: capitalize;
+}
+
+/*UpdatePlant Styles*/
+
+.update-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 10px solid #57b846;
+  border-radius: 5px;
+  width: 20vw;
+  min-width: 240px;
+  height: auto;
+  margin: 40px;
+  background: #fff;
+}
+
+.update-form input {
+  margin: 0.5vw;
+  border: 1px solid #57b846;
+  color: #1b3815;
+}
+
+.update-form button {
+  color: white;
+  font-weight: bold;
+  background: #57b846;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 1vw;
+  width: 10vw;
+  min-width: 96px;
+}
+
+@media (max-width: 960px) {
+  .plant-card {
+    margin: 2vw;
+  }
+
+  .update-form {
+    margin: 2vw;
+  }
+}

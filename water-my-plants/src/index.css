@@ -1,13 +1,134 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  margin: auto;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-width: 256px;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.title {
+  font-family: "Ubuntu";
+  display: flex;
+  width: 49vw;
+  min-width: 511px;
+  margin: auto;
+  justify-content: center;
+  font-size: 3.5rem;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-shadow: -1px -1px 0px #469438, 3px 3px 0px #469438, 6px 6px 0px #57b846;
+}
+
+/* nav header */
+
+.header {
+  display: flex;
+  height: auto;
+  flex-direction: row;
+  margin: 0 0 8px 0;
+  background-color: #469438;
+}
+
+/* Nav Links style */
+
+.nav-links {
+  width: 49vw;
+  min-width: 510px;
+  display: flex;
+  margin: 16px auto;
+  justify-content: center;
+}
+
+.nav-link {
+  width: auto;
+  height: auto;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  border: 0.3em solid white;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  background: #469438;
+  margin: 4px;
+  padding: 16px;
+  position: relative;
+}
+
+.nav-link:hover {
+  cursor: pointer;
+
+  background: white;
+  color: #469438;
+}
+
+@media (max-width: 1024px) {
+  
+  .header {
+    flex-direction: column;
+  }
+
+}
+
+@media (max-width: 512px) {
+  
+  .header {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+
+  .title {
+    flex-direction: column;
+    width: 59vw;
+    min-width: 191px;
+    line-height: 75%;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 39vw;
+    min-width: 128px;
+    padding: 0 8px 0 0;
+  }
+
+  .nav-link {
+    font-size: 14px;
+    padding: 7px;
+  }
+
+}
+
+@media (max-width: 352px) {
+
+  .title {
+    width: 51vw;
+    min-width: 128px;
+    font-size: 2.1rem;
+    padding: 0 0 0 8px;
+    letter-spacing: 3px;
+    text-shadow: -1px -1px 0px #469438, 2px 2px 0px #469438, 4px 4px 0px #57b846;
+  }
+
+  .nav-links {
+    width: 45vw;
+    min-width: 120px;
+  }
+
+  .nav-link {
+    font-size: 12px;
+    padding: 3px;
+  }
+
 }
