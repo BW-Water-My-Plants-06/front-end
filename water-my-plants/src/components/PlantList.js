@@ -1,5 +1,5 @@
 import React from 'react';
-import PlantDetail from './components/PlantDetail';
+// import PlantDetail from './components/PlantDetail';
 
 const myPlants = [{
     id: 1,
