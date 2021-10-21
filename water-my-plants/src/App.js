@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState, useEffect } from 'react'
 import './App.css';
 import styled from 'styled-components';
 import { AccountBox } from './components/accountBox';
@@ -28,6 +29,35 @@ const AppContainer = styled.div`
 `;
 
 function App() {
+  const [plants, setPlants] = useState([])
+
+// Create Plant
+
+const createPlant = async (id) => {
+  const res = await fetch(`https://water-my-plants-2-electric.herokuapp.com/api/plants/${id}`, {
+    method: 'POST',
+    headers: {
+      'Content-type': 'application/json',
+    },
+    body: JSON.stringify(plants),
+  })
+
+  const data = await res.json()
+
+  setPlants([...plants, data])
+
+// Edit Plant
+
+// Delete Plant
+    const deletePlant = async (id) => {
+      await fetch(`https://water-my-plants-2-electric.herokuapp.com/api/plants/${id}`, {
+        method: 'DELETE',
+      })
+  
+      setPlants(plants.filter((plants) => plants.id !== id))
+    }
+  
+
   return (
     <BrowserRouter>
       <NavBar />
@@ -49,5 +79,5 @@ function App() {
 
   );
 }
-
+}
 export default App;
