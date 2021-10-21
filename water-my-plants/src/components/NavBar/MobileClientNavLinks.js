@@ -59,10 +59,10 @@ export function MobileClientNavLinks(props) {
           <Link href="/home">Home</Link>
         </LinkItem>
           <LinkItem>
-          <Link href="/plants">Plants</Link>
+          <Link href="/upcoming-classes">Plants</Link>
         </LinkItem>
         <LinkItem>
-          <Link href="/create-my-plant">Create My Plant</Link>
+          <Link href="/adding-new">Create My Plant</Link>
         </LinkItem>
         <LinkItem>
           <Link href="/about">About</Link>
