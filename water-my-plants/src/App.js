@@ -6,6 +6,8 @@ import NavBar from './components/NavBar';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import PlantList from './components/PlantList';
 import PlantDetail from './components/PlantDetail';
+import Profile from "./components/Profile";
+import  Contact  from './components/contact'
 //components
 
 // import footer from ''
@@ -38,6 +40,8 @@ function App() {
           <Route path='/' exact component='DashBoard'/>
           <Route path='/' exact component='Contact'/>
           <Route path='/' exact component='ResetPassword'/> */}
+          <Route exact path="/profile" component={Profile} />
+          <Route path='/contact' component={Contact} />
           <PlantList />
         </Switch>
       </AppContainer> 
