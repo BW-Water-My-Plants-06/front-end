@@ -41,9 +41,7 @@ function App() {
           <Route path='/' exact component='Contact'/>
           <Route path='/' exact component='ResetPassword'/> */}
           <Route exact path="/profile" component={Profile} />
-          <Route path='/contact' >
-          <Contact />
-        </Route>
+          <Route path='/contact' component={Contact} />
           <PlantList />
         </Switch>
       </AppContainer> 
